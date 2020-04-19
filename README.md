@@ -20,3 +20,9 @@ The default <i>ex1data1.txt</i> is one of two data sets provided with this assig
 
 ### Output
 The module prints the weight(s) and bias term that fit the specified data, along with the Mean Square Error for comparison to other algorithms.
+
+
+### Input formatting
+<p>
+To use data sets that are not provided with the assignment, the data must be arranged in the <i>.txt</i> file in a specific way: (i) data for target and features must be in columns. (ii) the last column must be the target data.
+</p>
