@@ -51,7 +51,8 @@ To use data sets that are not provided with the assignment, the data must be arr
 </p>
 
 Two parameters may be used to improve the prediction accuracy. These parameters may the changed fromt he command line. The flags are:
-<p align="margin-left: 10%">
+<pre>
 <i>-C</i>: Inverse of regularization strength.</br>
 <i>-d</i>: Mapped features polynomial degree.
-</p>
+</pre>
+
