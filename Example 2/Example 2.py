@@ -69,7 +69,7 @@ def train(x, y, C=1.0, rand=1):
     return log_reg
 
 
-def plot(x, y, log_reg, step=0.5):  # (i) Look for ways to shrink these lines. (ii) Change the variables.
+def plot(x, y, log_reg, step=0.5):
     """
     Plots the classified data points and the decision boundary.
     :param x: The features data.
