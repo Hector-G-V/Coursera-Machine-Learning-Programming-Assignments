@@ -50,9 +50,7 @@ Plots all the data points and the decision boundary.
 To use data sets that are not provided with the assignment, the data must be arranged in the <i>.txt</i> file in a specific way: (i) data for target and features must be in columns. (ii) the last column must be the target data.
 </p>
 
-Two parameters may be used to improve the prediction accuracy. These parameters may the changed fromt he command line. The flags are:
-<pre>
-<i>-C</i>: Inverse of regularization strength.</br>
-<i>-d</i>: Mapped features polynomial degree.
-</pre>
+Two parameters may be used to improve the prediction accuracy. These parameters may the changed fromt he command line. The flags are: inverse of regularization strength: <i>-C</i>; mapped features polynomial degree: <i>-d</i>.
+
+Note: appropriate <i>-step</i> values are <i>0.5</i> for <i>'ex2data1.txt'</i>, and <i>0.01</i> for <i>'ex2data2.txt'</i>.
 
