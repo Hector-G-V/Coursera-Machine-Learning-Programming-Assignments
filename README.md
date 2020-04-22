@@ -76,4 +76,24 @@ Prints the prediction accuracy for both the training and testing data sets.
 To use data sets that are not provided with the assignment, the data must be arranged in rows, where one row contains all the pixel values for one image.
 </p>
 
-inverse of regularization strength <i>C</i> may be changed from the command line to improve the prediction accuracy. The flag is <i>-C</i>, and the default value is <i>C=1</i>.
+Inverse of regularization strength <i>C</i> may be changed from the command line to improve the prediction accuracy. The flag is <i>-C</i>, and the default value is <i>C=1</i>.
+
+## Example 4
+<p>
+Feed-Forward Neural Network with one hidden layer is trained with TensorFlow tools.
+
+### Input
+<p>
+The file name may be input from the command line using the flag <i>-file</i>. The default file <i>ex4data1.mat</i> is provided with this assignment. It is found in the Example 4 <i>Data</i> folder.
+</p>
+
+### '__main__' Output
+Prints the prediction accuracy for the training data sets.
+
+### Input Formatting
+<p>
+To use data sets that are not provided with the assignment, the data must be arranged in rows, where one row contains all the pixel values for one image.
+</p>
+
+Two parameters may be used to improve the prediction accuracy. These parameters may the changed fromt he command line. The flags are: number of nodes in the hidden layer: <i>-n</i>; number of training epochs: <i>-epochs</i>.
+
