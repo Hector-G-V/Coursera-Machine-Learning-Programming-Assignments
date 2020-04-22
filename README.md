@@ -79,8 +79,10 @@ To use data sets that are not provided with the assignment, the data must be arr
 Inverse of regularization strength <i>C</i> may be changed from the command line to improve the prediction accuracy. The flag is <i>-C</i>, and the default value is <i>C=1</i>.
 
 ## Example 4
-<p>
+
 Feed-Forward Neural Network with one hidden layer is trained with TensorFlow tools.
+
+Note: using rectified linear activation for the hidden layer. The assignment uses sigmoid activation.
 
 ### Input
 <p>
