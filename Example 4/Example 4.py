@@ -1,4 +1,3 @@
-import os
 import argparse
 from scipy.io import loadmat
 import tensorflow as tf
@@ -9,9 +8,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-file', default='ex4data1.mat', type=str,  help='File name.')
 parser.add_argument('-n', default=25, type=int, help='Number of nodes in the hidden layer')
 parser.add_argument('-epochs', default=100, type=int, help='Number of epochs.')
-
-
-os.chdir('C:/Users/hecto/OneDrive/Documents/Coursera Machine Learning Assignments/machine-learning-ex4/ex4')
 
 
 def extract_xy(file):
