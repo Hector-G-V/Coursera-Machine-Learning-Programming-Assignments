@@ -99,3 +99,20 @@ To use data sets that are not provided with the assignment, the data must be arr
 
 Two parameters may be used to improve the prediction accuracy. These parameters may the changed fromt he command line. The flags are: number of nodes in the hidden layer: <i>-n</i>; number of training epochs: <i>-epochs</i>.
 
+## Example 5
+<i>Example 5.py</i> uses an sklearn linear regression function to fit test data with polynomial-mapped features, and plots the error as a function of the specified parameter. The parameter options are: test size, polynomial degree, and regularization parameter.
+
+### Input
+
+The file name may be input from the command line using the flag <i>-file</i>. The data contains testing, training and cross-validation sets.
+
+The default <i>ex5data1.mat</i> is found in the Example 5 <i>Data</i> folder.
+
+### '__main__' Output
+Three plots: error as a function of test set size; error as a function of polynomial degree, and error as a function of the regularization parameter.
+
+### Input Formatting
+
+The regularization parameter <i>alpha</i> may be changed from the command line to improve the prediction accuracy. The flag is <i>-alpha</i>, and the default value is <i>alpha=568</i>.
+
+The polynomial degree <i>degree</i> may be changed from the command line to improve the prediction accuracy. The flag is <i>-degree</i>, and the default value is <i>degree=3</i>.
