@@ -36,7 +36,7 @@ def extract_xy(file, x_key='X', y_key='y'):
 
     if '.csv' in file:
         data = pd.read_csv(file)
-        x, y = data[x_key], data[x_key]
+        x, y = data[x_key], data[y_key]
         x = CountVectorizer().fit_transform(x)  # pre-processing: converts string email into features vector.
         return x, y
     else:
@@ -44,7 +44,7 @@ def extract_xy(file, x_key='X', y_key='y'):
         return None, None
 
 
-def plot(x, y, func, step=0.5):  # pulled directly from Example 2
+def plot(x, y, func, step=0.01):  # pulled directly from Example 2
     """
     Plots the classified data points and the decision boundary.
     :param x: The features data.
@@ -88,7 +88,7 @@ def plot(x, y, func, step=0.5):  # pulled directly from Example 2
     plt.show()
 
 
-def train(x, y, C=1.0, kernel='linear', test_size=0.1, rand=1):
+def train(x, y, C=1.0, kernel='rbf', test_size=0.1, rand=1):
     """
     Trains the model with an SVM algorithm.
     :param x: The features data.
