@@ -138,3 +138,21 @@ Plots if the features data is 2D.
 ### Input Formatting
 
 The keys for almost all datasets are: <i>X_key: 'X', y_key: 'y'</i>. The exceptions are <i>spamTest.mat</i> (<i>X_key: 'Xtest', y_key: 'ytest'</i>), and <i>spam.csv</i> (<i>X_key: 'EmailText', y_key: 'Label'</i>).
+
+## Example 7
+
+<i>Example 6.py</i> provides the option to run K-Means or PCA on the assignment data. The module is designed to process data with dimensions that are consistent with the assignment.
+
+### Input
+
+The file name may be input from the command line using the flag <i>-file</i>.
+
+The model choice - either PCA or K-Means - is indicated with flag <i>-model</i>.
+
+The number of clusters(K-means) or components (PCA) is indicated with the flag <i>-n</i>.
+
+
+### '__main__' Output
+Plot of the data or image.
+
+If the data is an image: plots the original image and the processed image. If PCA, the image number to plot is indicated with the flag <i>-pca_img</i>.
