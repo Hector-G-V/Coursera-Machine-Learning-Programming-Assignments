@@ -23,7 +23,7 @@ def extract_xy(file, x_key='X', y_key='y'):
     """
     Extracts x, y from the file. Will work with pre-processed .mat files,
     and with .csv files that require pre-processing.
-    :param file: The tile with x and y.
+    :param file: The file with x and y.
     :param x_key: Dictionary key for the features data.
     :param y_key: Dictionary key for the targets.
     :return: x and y.
