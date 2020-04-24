@@ -116,3 +116,25 @@ Three plots: error as a function of test set size; error as a function of polyno
 The regularization parameter <i>alpha</i> may be changed from the command line to improve the prediction accuracy. The flag is <i>-alpha</i>, and the default value is <i>alpha=568</i>.
 
 The polynomial degree <i>degree</i> may be changed from the command line to improve the prediction accuracy. The flag is <i>-degree</i>, and the default value is <i>degree=3</i>.
+
+## Example 6
+
+<i>Example 6.py</i> uses the <i>SVM</i> function in the <i>sklearn</i> module to train a model to classify data and to classify spam.
+
+### Input
+
+The file name may be input from the command line using the flag <i>-file</i>. The data is split into a testing and training set.
+
+This assignment did not provide classified, raw email data for pre-processing AND testing. Therefore, the file <i>spam.csv</i> is included. The file is a dataset of classified, raw email data that may be used to train a model with this module.
+
+For sake of generality to most data, input data is automatically splits to test and train. Therefore, this module is unable to train with <i>spamTrain</i> and test with <i>spamTest</i> without changing the <i>main()</i> function.
+
+
+### '__main__' Output
+Prints the prediction accuracy for both the training and testing data sets.
+
+Plots if the features data is 2D.
+
+### Input Formatting
+
+The keys for almost all datasets are: <i>X_key: 'X', y_key: 'y'</i>. The exceptions are <i>spamTest.mat</i> (<i>X_key: 'Xtest', y_key: 'ytest'</i>), and <i>spam.csv</i> (<i>X_key: 'EmailText', y_key: 'Label'</i>).
