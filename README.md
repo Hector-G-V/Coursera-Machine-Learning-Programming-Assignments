@@ -159,16 +159,20 @@ If the data is an image: plots the original image and the processed image. If PC
 
 ## Example 8
 
-<i>Example 8.1.py</i> is the anomaly detection module, and <i>Example 8.2.py</i> is the recommender system module. 
+<i>Example 8.1.py</i> is the anomaly detection module. It fits training data, then prints a range of epsilons and F1 scores for a validation set. 
+
+<i>Example 8.2.py</i> is the recommender system module. It takes data Y, R and finds a features vector X, and ratings vector (weights) Theta. 
 
 ### Input
 
 The file name may be input from the command line using the flag <i>-file</i>.
 
-<i>Example 8.1.py</i>: Training and validation data; min and max range for optimal epsilon search.</br>
+<i>Example 8.1.py</i>: Training and validation data; min and max range for optimal epsilon search.
+
 <i>Example 8.2.py</i>: Training and debugging data; length of features and weights vectors; number of gradient descent iterations.
 
 ### '__main__' Output
 
-<i>Example 8.1.py</i>: F1 scores for epsilon values in the indicated range.</br>
+<i>Example 8.1.py</i>: F1 scores for epsilon values in the indicated range.
+
 <i>Example 8.2.py</i>: Trained X, Theta, and a plot of the cost function over the iterations.
